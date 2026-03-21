@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Redirecting...</title>
+<script>
+const url = new URLSearchParams(window.location.search).get('url');
+if (url && url.startsWith('https://claude.ai/')) {
+  window.location.replace(url);
+} else {
+  document.body.textContent = 'Invalid or missing URL.';
+}
+</script>
+</head>
+<body>Redirecting...</body>
+</html>
